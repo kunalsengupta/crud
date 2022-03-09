@@ -19,6 +19,7 @@ function showReadOperation(){
 
 
 function getData(url){
+    console.log(url)
   axios.get(url).then(function(response) {
       console.log(response)
         crudResult.innerHTML=JSON.stringify(response.data);
@@ -31,7 +32,7 @@ function getData(url){
 
 
  function readFunction () {
-    if(!readInput.value){
+    if(!readInput.value || readInput.value=='.'){
 
         crudResult.innerHTML="NOT Valid Input";
     }
