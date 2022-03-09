@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>learning</title>
+        <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="curd-body background-color">
+            <h1>CURD Operations</h1>
+            <h3 class="description">Demonstration For CURD Operations</h3>
+            <div class="button-space">
+                <input class="btn"  id="read" onclick="showReadOperation()" type="button" value="Read">
+                <input disabled class="btn" id="create" onclick="createFunction ()" type="button" value="Create">
+                <input disabled class="btn"  id="update" onclick="updateFunction ()" type="button" value="Update">
+                <input disabled class="btn"  id="delete" onclick="deleteFunction ()" type="button" value="Delete">
+            </div>
+            <div id="crud-description" >
+                <p>Note: On click of read button Input option appears.</p>
+
+            </div>
+            <div class="crud-operations">
+                <div id="read-operation">
+                    <input type="text" name="" id="read-input">
+                    <input type="button" class="btn" id="send-input" onclick="readFunction()" value="Send">
+                    <div id="result"></div>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>
